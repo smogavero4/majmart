@@ -1,51 +1,191 @@
+/* Main Body CSS */
+/* Styles for the main body of the webpage */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center; /* Center items vertically */
-}
-
-.login-image {
-    width: 30px; /* Adjust size as needed */
-    margin-right: 10px; /* Add some spacing between the image and title */
-}
-
-.title {
     margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set font family */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set default text color to white */
+}
+
+/* Navigation Bar */
+/* Styles for the navigation bar */
+
+nav {
+    position: fixed; /* Position the navbar fixed at the top */
+    top: 0; /* Align the navbar to the top */
+    left: 0; /* Align the navbar to the left */
+    width: 100%; /* Set navbar width to 100% */
+    z-index: 1000; /* Ensure the navbar is above other content */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+.logo-nav-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+    padding: 0 20px; /* Add padding to adjust the space around logo and navbar items */
+}
+
+.logo-image {
+    float: left; /* Float the logo image to the left */
+    width: 10%; /* Set logo width */
+    margin: 1%; /* Add margin */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #444;
-    text-align: center;
+    float: left; /* Float the navigation items to the left */
+    list-style-type: none; /* Remove default list style */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 5%; /* Add margin to the top */
 }
 
 nav ul li {
-    display: inline;
-    padding: 10px;
+    display: inline; /* Display navigation items inline */
+    margin: 20px; /* Adjust margin as needed */
+    font-size: 1.5vw; /* Increase font size */
+    font-weight: bold; /* Make font bold */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Set text color to white */
 }
 
-section {
-    padding: 20px;
+nav ul li a.active {
+    text-decoration: underline; /* Underline active link */
 }
+
+nav ul li a:hover {
+    color: aqua; /* Change color on hover */
+}
+
+
+/* Home Page */
+/* Styles for the home page sections */
+
+/* Section 1 */
+.home-section1 {
+    background-image: url('../img/CoverPhoto.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center 28%; /* Shift the background image down */
+    border-bottom-left-radius: 20%; /* Add border radius to the bottom-left corner */
+    border-bottom-right-radius: 20%; /* Add border radius to the bottom-right corner */
+    padding: 10%; /* Add padding */
+}
+
+.home-title {
+    text-align: center; /* Center align text */
+    margin-top: 10%; /* Adjust margin as needed */
+    color: #fff; /* Set text color to white */
+    height: 400px; /* Set height to 400 pixels */
+    width: 100%; /* Set width to 100% */
+    font-size: 2.0vw; /* Set font size */
+}
+
+/* Section 2 */
+.home-section2 {
+    display: flex; /* Use flexbox for layout */
+}
+
+.home-section2 .left-column {
+    width: 40%; /* Set width */
+    text-align: right; /* Right align text */
+    padding: 5% 0% 5% 5%; /* Adjust padding */
+    font-size: 1.5vw; /* Set font size */
+    color: gray; /* Set text color */
+}
+
+.home-section2 .right-column {
+    width: 33%; /* Set width */
+    text-align: left; /* Left align text */
+    padding: 5% 0% 0 5%; /* Adjust padding */
+    font-size: 1.5vw; /* Set font size */
+    color: gray; /* Set text color */
+}
+
+/* Section 3 */
+.home-section3 {
+    text-align: center; /* Center align text */
+}
+
+.home-section3 .video-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-gap: 5%; /* Gap between grid items */
+    margin: 2.5% 10% 10% 10%; /* Adjust margin */
+}
+
+
+
+
+
+.gallery-section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    margin:15%;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: 300px; /* Set a fixed height for all images */
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+
+/* Section 2 */
+.mystory-section2 {
+    display: flex; /* Use flexbox for layout */
+    margin:5%;
+}
+
+.mystory-section2 .left-column {
+    width: 40%; /* Set width */
+    text-align: right; /* Right align text */
+    padding: 5% 0% 5% 5%; /* Adjust padding */
+    font-size: 1.5vw; /* Set font size */
+    color: gray; /* Set text color */
+}
+
+.mystory-section2 .right-column {
+    width: 33%; /* Set width */
+    text-align: left; /* Left align text */
+    padding: 5% 0% 0 5%; /* Adjust padding */
+    font-size: 1.5vw; /* Set font size */
+    color: gray; /* Set text color */
+}
+
+.mystory-section2 .right-column img{
+    width: 75%; /* Set width */
+}
+
+
+
+
+/* Footer */
+/* Styles for the footer section */
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color to white */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Add padding */
+    margin-top:25%;
 }
