@@ -1,6 +1,13 @@
+
+
+
+
+
+
+
+
 /* Main Body CSS */
 /* Styles for the main body of the webpage */
-
 body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -8,6 +15,10 @@ body {
     background-color: black; /* Set background color to black */
     color: white; /* Set default text color to white */
 }
+
+
+
+
 
 /* Navigation Bar */
 /* Styles for the navigation bar */
@@ -18,28 +29,26 @@ nav {
     left: 0; /* Align the navbar to the left */
     width: 100%; /* Set navbar width to 100% */
     z-index: 1000; /* Ensure the navbar is above other content */
-    padding: 10px 0; /* Adjust padding as needed */
+    padding: 0; /* Adjust padding as needed */
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.6)); /* Gray gradient with transparency */
 }
 
-.logo-nav-container {
+.navbar {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Align items vertically */
     justify-content: center; /* Center the content horizontally */
-    padding: 0 20px; /* Add padding to adjust the space around logo and navbar items */
+    padding: 0 10px; /* Add padding to adjust the space around logo and navbar items */
 }
 
 .logo-image {
     float: left; /* Float the logo image to the left */
-    width: 10%; /* Set logo width */
-    margin: 1%; /* Add margin */
+    width: 5%; /* Set logo width */
+    margin-left: 2.5%;
 }
 
 nav ul {
-    float: left; /* Float the navigation items to the left */
-    list-style-type: none; /* Remove default list style */
-    justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin-top: 5%; /* Add margin to the top */
+    margin-top: 1.5%; /* Add margin to the top */
 }
 
 nav ul li {
@@ -47,6 +56,7 @@ nav ul li {
     margin: 20px; /* Adjust margin as needed */
     font-size: 1.5vw; /* Increase font size */
     font-weight: bold; /* Make font bold */
+    padding-left: 2.5%;
 }
 
 nav ul li a {
@@ -62,12 +72,21 @@ nav ul li a:hover {
     color: aqua; /* Change color on hover */
 }
 
+.social-icons a{
+    float:right;
+    margin-right: 2%;
+}
+
+
+
+
+
+
 
 /* Home Page */
 /* Styles for the home page sections */
 
-/* Section 1 */
-.home-section1 {
+.home {
     background-image: url('../img/CoverPhoto.jpg'); /* Set background image */
     background-size: cover; /* Cover the entire container */
     background-position: center 28%; /* Shift the background image down */
@@ -143,6 +162,16 @@ nav ul li a:hover {
 
 
 
+
+
+
+
+
+
+
+
+/* Gallery Page */
+
 .gallery-section2 {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +210,7 @@ nav ul li a:hover {
 
 
 
-
+/* My Story Page */
 /* Section 2 */
 .mystory-section2 {
     display: flex; /* Use flexbox for layout */
@@ -207,6 +236,46 @@ nav ul li a:hover {
 .mystory-section2 .right-column img{
     width: 75%; /* Set width */
 }
+
+
+
+.container {
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="file"] {
+    margin-top: 5px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
 
 
 
