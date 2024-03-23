@@ -111,13 +111,34 @@ nav ul li a:hover {
     text-align: center; /* Center align text */
 }
 
-.home-section3 .video-grid {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
-    grid-gap: 5%; /* Gap between grid items */
-    margin: 2.5% 10% 10% 10%; /* Adjust margin */
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:2%;
 }
 
+.video {
+    width: calc(25% - 10px); /* Adjust based on the number of videos you want per row */
+    margin-bottom: 20px;
+}
+
+.video img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .video {
+        width: calc(50% - 10px); /* 2 videos per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .video {
+        width: 100%; /* 1 video per row on even smaller screens */
+    }
+}
 
 
 
