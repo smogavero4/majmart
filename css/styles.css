@@ -246,38 +246,26 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  .form-group {
-    margin-bottom: 20px;
-  }
-  label {
+  .button {
     display: block;
-    margin-bottom: 5px;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  input[type="file"] {
-    margin-top: 5px;
-  }
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    width: 75%;
+    max-width: 300px; /* Limit maximum width to maintain responsiveness */
+    margin: 0 auto; /* Center horizontally */
+    padding: 15px 0; /* Adjust padding to center vertically */
+    font-size: 20px;
+    background-color: #06572f;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
   }
-  input[type="submit"]:hover {
-    background-color: #45a049;
+  .button:hover {
+    background-color: #0da056;
   }
-
-
+  .input-field {
+    margin-bottom: 10px;
+  }
 
 
 /* Footer */
