@@ -29,10 +29,10 @@
 
 
     <div class="container">
-      <h2>Contact MAJMart</h2>
+      <h2>new Contact MAJMart</h2>
       <p>Contact for pricing and custom, commissioned skateboard decks! Thank you for your interest!</p>
       <h3>Majmartist@gmail.com</h3>
-      <form id="contactForm" method="post" action="https://0so0zrjxib.execute-api.us-east-1.amazonaws.com/prod/contact">
+      <form id="contactForm" method="post">
           <div class="input-field">
               <input type="text" id="name" name="name" placeholder="Your Name" required>
           </div>
@@ -42,9 +42,41 @@
           <div class="input-field">
               <textarea id="message" name="message" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="button">Submit</button>
+          <button type="button" class="button" onclick="submitForm()">Submit</button>
       </form>
   </div>
+  
+
+  <script>
+      function submitForm() {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+  
+          var jsonData = {
+              "name": name,
+              "email": email,
+              "message": message
+          };
+  
+          fetch('https://0so0zrjxib.execute-api.us-east-1.amazonaws.com/prod/contact', {
+              method: 'POST',
+              body: JSON.stringify(jsonData),
+              headers: {
+                  'Content-Type': 'application/json'
+              }
+          })
+          .then(response => response.json())
+          .then(data => {
+              alert(data.body);
+              document.getElementById("contactForm").reset();
+          })
+          .catch(error => {
+              console.error('Error:', error);
+              alert('An error occurred while submitting the form. Please try again later.');
+          });
+      }
+  </script>
     
 
 
